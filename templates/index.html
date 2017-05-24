@@ -1,0 +1,13 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+{% block title %}xxx{% endblock %}
+{% block headmessage %}
+  <h3 style='font-family:¿¬Ìå;'>xxx</a></h3>
+{% endblock %}
+{% block content %}
+  {% for post in posts %}
+  <p style='font-family:Î¢ÈíÑÅºÚ;font-size:14pt;font-weight:hold;'>
+    <a hrf='/post/{{post.slug}}'>{{ post.title }}</a>
+    </p>
+  {% endfor %}
+{% endblock %}
